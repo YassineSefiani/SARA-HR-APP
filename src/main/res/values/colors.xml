@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#40ba91</color>
+    <color name="colorPrimaryDark">#339475</color>
+    <color name="colorPrimaryLight">#77edc1</color>
+    <color name="colorAccent">#40ba91</color>
+
+    <color name="yellow">#FAB260</color>
+    <color name="red">#E8526F</color>
+    <color name="blue">#6FCBDB</color>
+
+    <color name="yellowDark">#DE9541</color>
+    <color name="redDark">#D4415E</color>
+    <color name="blueDark">#0DAFCC</color>
+
+    <color name="defaultTextColor">#8A000000</color>
+    <color name="defaultBGColor">#FAFAFA</color>
+
+</resources>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewCandidateActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fifteen"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fifty"
+            android:layout_marginBottom="@dimen/ten"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/proceed"
+                style="@style/fillButtons"
+                android:layout_marginEnd="@dimen/ten"
+                android:text="@string/proceed" />
+
+            <Button
+                android:id="@+id/clear"
+                style="@style/whiteButtons"
+                android:text="@string/clear_fields" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.5"
+                android:fontFamily="@font/gothic"
+                android:text="@string/edit_image"
+                android:textSize="18sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/photoInput"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/employee_tie" />
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/nameTIL"
+            style="@style/TIL"
+            android:hint="@string/enter_candidate_name"
+            app:errorTextAppearance="@style/ErrorYellow">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/name"
+                style="@style/TIET" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/phoneTIL"
+            style="@style/TIL"
+            android:hint="@string/enter_candidate_phone_number"
+            app:errorTextAppearance="@style/ErrorRed">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/phone"
+                style="@style/TIET"
+                android:inputType="phone"
+                android:maxLength="10" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/posTIL"
+            style="@style/TIL"
+            android:hint="@string/enter_preferable_position"
+            app:errorTextAppearance="@style/ErrorBlue">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/position"
+                style="@style/TIET" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/five"
+            android:layout_marginTop="@dimen/fifteen"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/fifteen">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gothic"
+                android:text="@string/choose_status"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/twenty" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/uploadResume"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/five"
+            android:layout_marginBottom="@dimen/fifty"
+            android:fontFamily="@font/gothic"
+            android:paddingBottom="@dimen/twenty"
+            android:text="@string/upload_resume"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</ScrollView>

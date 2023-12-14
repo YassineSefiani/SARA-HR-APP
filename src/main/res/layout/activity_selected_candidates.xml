@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/fifteen"
+    android:orientation="vertical"
+    tools:context=".SelectedCandidatesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="@dimen/ten"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/deleteS"
+            style="@style/fillButtons"
+            android:layout_marginEnd="@dimen/ten"
+            android:text="Delete these" />
+
+        <Button
+            android:id="@+id/sortbySelectedbutton"
+            style="@style/whiteButtons"
+            android:text="Sort By▼" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/selectedCandidateList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/candidate_tile" />
+
+</LinearLayout>

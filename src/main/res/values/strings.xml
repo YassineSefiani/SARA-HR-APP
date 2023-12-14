@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Cloral HR Management System</string>
+    <string name="action_logout">Logout</string>
+
+    <string name="save_details">Save Details</string>
+    <string name="reset">Reset</string>
+    <string name="name_star">Name*</string>
+    <string name="phone_star">Phone*</string>
+    <string name="position_star">Applied For*</string>
+    <string name="status_star">Status*</string>
+    <string name="resume">Resume</string>
+    <string name="hint_below_table">*Tap on value to edit</string>
+
+    <string name="proceed">Proceed</string>
+    <string name="clear_fields">clear fields</string>
+
+    <string name="edit_image">Tap on image to pick new:</string>
+    <string name="enter_candidate_name">Enter Candidate Name</string>
+    <string name="enter_candidate_phone_number">Enter Candidate Phone Number</string>
+    <string name="enter_preferable_position">Enter Preferable Position</string>
+    <string name="choose_status">Choose Status:</string>
+    <string name="upload_resume">Click here to upload resume…</string>
+    <string name="view">View</string>
+    <string name="upload">Upload</string>
+
+    <string-array name="statusSpinnner">
+        <item>Selected</item>
+        <item>Rejected</item>
+        <item>In Process</item>
+        <item>Interview</item>
+    </string-array>
+</resources>
